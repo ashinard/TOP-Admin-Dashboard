@@ -1,21 +1,87 @@
+html{
+  background-color: black;
+}
+
+body{
+  width:70%;
+  margin: auto;
+}
+
 .container{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 3fr;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr .5fr;
+  background-color: lightgray;
   }
 
-  .banner{
-    grid-column: 2/3;
-    grid-row: 1/2;
+.menu{
+  grid-column: 1/2;
+  grid-row: 1/4;
+  background-color: rgb(1, 134, 187);
   }
 
-  .menu{
-    grid-column: 1/2;
-    grid-row: 1/3;
-    background-color: rgb(1, 134, 187);
-  }
+.menu h2{
+  color: white;
+}
 
-  ul li{
-    list-style-type: none;
-    color: white;
-  }
+ul li{
+  list-style-type: none;
+  color: white;
+}
+
+.dash{
+  grid-column: 2/3;
+  grid-row: 1/3;
+  display: grid;
+  grid-template-columns: .25fr 6fr 6fr 6fr .25fr;
+  grid-template-rows: 1fr 3fr;
+  background-color: lightgray;
+  gap: 20px;
+}
+
+.banner{
+  grid-column: 1/6;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: white;
+}
+
+.projects{
+  grid-column: 2/4;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  gap: 10px;
+}
+
+.to-do{
+  background-color: white;
+}
+
+.updates{
+  grid-column: 4/5;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-rows:2fr 2fr;
+}
+
+.ancmnts{
+  grid-row: 1/2;
+}
+
+.ancmnts div{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: white;
+}
+
+.trends{
+  grid-row: 2/3
+}
+
+.trends div{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: white;
+}
