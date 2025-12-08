@@ -29,6 +29,8 @@ body{
 
 .menu h2 img{
   padding-right: .25rem;
+  height: 2rem;
+  width: 2rem;
 }
 
 .menu ul{
@@ -45,6 +47,8 @@ body{
 
 .menu ul li img{
   padding-right: .5rem;
+  height: 1.2rem;
+  width: 1.2rem;
 }
 
 .main{
