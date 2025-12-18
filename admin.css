@@ -21,16 +21,24 @@ body{
   text-align: left;
 }
 
+.menu{
+  display: grid;
+  justify-items: start;
+}
+
 .menu h2{
-  padding-left: 1.5rem;
+  display: grid;
+  grid-template-columns: .5fr 5fr;
+  align-items: center;
+  padding-left: 2rem;
   font-size: 1.5rem;
   color: white;
 }
 
 .menu h2 img{
   padding-right: .25rem;
-  height: 2rem;
-  width: 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .menu ul{
@@ -39,16 +47,19 @@ body{
 
 .menu ul li{
   list-style-type: none;
-  padding: .5rem 0 .5rem 0;
+  padding: .75rem 0 .75rem 0;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: white;
+  display: grid;
+  grid-template-columns: .5fr 5fr;
+  align-items: center;
 }
 
 .menu ul li img{
   padding-right: .5rem;
-  height: 1.2rem;
-  width: 1.2rem;
+  height: 1.4rem;
+  width: 1.4rem;
 }
 
 .main{
