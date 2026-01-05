@@ -32,7 +32,7 @@ body{
   align-items: center;
   padding-left: 2rem;
   font-size: 1.5rem;
-  color: black;
+  color: white;
 }
 
 .menu h2 img{
@@ -50,7 +50,7 @@ body{
   padding: .75rem 0 .75rem 0;
   font-weight: bold;
   font-size: 1.3rem;
-  color: black;
+  color: white;
   display: grid;
   grid-template-columns: .5fr 5fr;
   align-items: center;
@@ -60,6 +60,10 @@ body{
   padding-right: .5rem;
   height: 1.4rem;
   width: 1.4rem;
+}
+
+.menu img{
+  filter: invert(100%);
 }
 
 .main{
@@ -98,6 +102,7 @@ body{
 
 .search input{
   grid-column: 2/3;
+  padding: 0 20px 0 20px;
 }
 
 .search img{
