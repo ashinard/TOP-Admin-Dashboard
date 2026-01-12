@@ -223,7 +223,7 @@ body{
 
 .icons{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr;
   justify-items: end;
   align-items: center;
 }
@@ -234,7 +234,7 @@ body{
 }
 
 .tile:nth-child(2) > .icons{
-  height: 2.5rem;
+  height: 2rem;
 }
 
 .tile:nth-child(4) > .icons,
