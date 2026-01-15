@@ -336,3 +336,36 @@ body{
 .coworkers p{
   grid-column: 2/3;
 }
+
+/*Webpage interactive CSS*/
+
+.s-bar:active,
+.s-bar:hover,
+.s-bar:focus{
+  outline: none;
+}
+
+.button:hover{
+  cursor: pointer;
+}
+
+.button:active{
+  cursor: pointer;
+  background-color: darkgreen;
+}
+
+.prof-tabs li:hover{
+  cursor: pointer;
+}
+
+.addtnl-info li:hover{
+  cursor: pointer;
+}
+
+.icons img:hover{
+  cursor: pointer;
+}
+
+.coworkers:hover{
+  cursor: pointer;
+}
