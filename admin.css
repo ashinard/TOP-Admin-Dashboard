@@ -210,6 +210,13 @@ body{
   border-radius: 5px;
   border-left: solid 8px gold;
   height: 20vh;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.desc{
+  grid-row: 1/2;
 }
 
 .desc strong{
@@ -222,42 +229,16 @@ body{
 }
 
 .icons{
-  display: grid;
-  grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr;
-  justify-items: end;
-  align-items: center;
-}
-
-.tile:first-child > .icons,
-.tile:nth-child(3) > .icons{
-  height: 6rem;
-}
-
-.tile:nth-child(2) > .icons{
-  height: 2rem;
-}
-
-.tile:nth-child(4) > .icons,
-.tile:nth-child(5) > .icons,
-.tile:nth-child(6) > .icons{
-  height: 4rem;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: end;
+  align-items: end;
 }
 
 .icons img{
   height: 1.5rem;
   width: 1.5rem;
-}
-
-.icons img:first-child{
-  grid-column: 4/5;
-}
-
-.icons img:nth-child(2){
-  grid-column: 5/6;
-}
-
-.icons img:nth-child(3){
-  grid-column: 6/7;
+  padding: 0 .5rem 0;
 }
 
 .updates{
@@ -320,6 +301,8 @@ body{
 }
 
 .coworkers{
+  padding: 0 1rem 0;
+
   display: grid;
   grid-template-columns: 1fr 4fr;
   align-items: center;
@@ -345,7 +328,11 @@ body{
   outline: none;
 }
 
-.button:hover{
+.button:hover,
+.prof-tabs li:hover,
+.addtnl-info li:hover,
+.icons img:hover,
+.coworkers:hover{
   cursor: pointer;
 }
 
@@ -354,18 +341,20 @@ body{
   background-color: darkgreen;
 }
 
-.prof-tabs li:hover{
-  cursor: pointer;
-}
-
+.controls h2:hover,
+.prof-tabs li:hover,
 .addtnl-info li:hover{
-  cursor: pointer;
-}
-
-.icons img:hover{
-  cursor: pointer;
+  background-color: darkgreen;
+  border-radius: 5px;
 }
 
 .coworkers:hover{
-  cursor: pointer;
+  background-color: rgb(80, 220, 157);
+  border-radius: 5px;
+}
+
+.coworkers:active{
+  background-color: darkgreen;
+  border-radius: 5px;
+  color: white;
 }
